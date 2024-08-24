@@ -1,1 +1,83 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: #4caf50;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card-container,
+.log-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 60px;
+  height: 80px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.top-suit,
+.bottom-suit {
+  position: absolute;
+  font-size: 18px;
+}
+
+.top-suit {
+  top: 8px;
+  left: 8px;
+}
+
+.bottom-suit {
+  bottom: 8px;
+  right: 8px;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.state h3 {
+  margin-right: 20px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.number {
+  font-size: 28px;
+}
